@@ -58,13 +58,13 @@
         compatible = "zmk,combos";
 
         left_enter {
-            bindings = <&none>;
+            bindings = <&kp ENTER>;
             key-positions = <30 31>;
             layers = <0 1>;
         };
 
         right_enter {
-            bindings = <&none>;
+            bindings = <&kp ENTER>;
             key-positions = <34 35>;
             layers = <0 1>;
         };
@@ -101,7 +101,7 @@
         layer_ru: layer_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &to_ru>;
+            bindings = <&to 1 &to_ru>;
             label = "LAYER_RU";
             tap-ms = <30>;
             wait-ms = <0>;
@@ -131,10 +131,10 @@
 
         base_en {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R   &kp T                                  &kp Y      &kp U   &kp I  &kp O  &kp P
-  &kp A  &kp S  &kp D  &kp F   &kp G                                  &kp H      &kp J   &kp K  &kp L  &none
-  &kp Z  &kp X  &kp C  &kp V   &kp B                                  &kp N      &kp M   &none  &none  &kp DOT
-                       &td_en  &kp BACKSPACE  &kp SPACE    &kp COMMA  &kp UNDER  &td_ru
+  &kp Q  &kp W  &kp E  &kp R      &kp T                                  &kp Y      &kp U      &kp I  &kp O  &kp P
+  &kp A  &kp S  &kp D  &kp F      &kp G                                  &kp H      &kp J      &kp K  &kp L  &none
+  &kp Z  &kp X  &kp C  &kp V      &kp B                                  &kp N      &kp M      &none  &none  &kp DOT
+                       &layer_en  &kp BACKSPACE  &kp SPACE    &kp COMMA  &kp UNDER  &layer_ru
             >;
 
             display-name = "Base EN";
@@ -144,10 +144,10 @@
         base_ru {
             display-name = "Base RU";
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R   &kp T                                      &kp Y      &kp U   &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &kp F   &kp G                                      &kp H      &kp J   &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X  &kp C  &kp V   &kp B                                      &kp N      &kp M   &kp COMMA  &kp DOT  &en SLASH
-                       &td_en  &kp BACKSPACE  &kp SPACE    &en LS(SLASH)  &kp UNDER  &td_ru
+  &kp Q  &kp W  &kp E  &kp R      &kp T                                      &kp Y      &kp U      &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D  &kp F      &kp G                                      &kp H      &kp J      &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X  &kp C  &kp V      &kp B                                      &kp N      &kp M      &kp COMMA  &kp DOT  &en SLASH
+                       &layer_en  &kp BACKSPACE  &kp SPACE    &en LS(SLASH)  &kp UNDER  &layer_ru
             >;
         };
 
