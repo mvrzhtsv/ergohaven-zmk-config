@@ -39,16 +39,16 @@
             hold-trigger-on-release;
         };
 
-        td_ru: td_ru {
+        td_board_ru: td_board_ru {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_RU";
+            label = "TD_BOARD_RU";
             #binding-cells = <0>;
             bindings = <&none>, <&board_ru>;
         };
 
-        td_en: td_en {
+        td_board_en: td_board_en {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_EN";
+            label = "TD_BOARD_EN";
             #binding-cells = <0>;
             bindings = <&none>, <&board_en>;
         };
@@ -80,6 +80,16 @@
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp RIGHT_BRACKET>;
         };
+
+        kp_ht: kp_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KP_HT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -95,6 +105,21 @@
             bindings = <&kp ENTER>;
             key-positions = <34 35>;
             layers = <0 1>;
+        };
+
+        left_ht_Enter_LSEnter {
+            bindings = <&kp_ht ENTER LS(ENTER)>;
+            key-positions = <32 24>;
+        };
+
+        left_LCEnter {
+            bindings = <&kp LC(ENTER)>;
+            key-positions = <32 14>;
+        };
+
+        left_LAEnter {
+            bindings = <&kp LA(ENTER)>;
+            key-positions = <32 4>;
         };
     };
 
