@@ -107,19 +107,22 @@
             layers = <0 1>;
         };
 
-        left_ht_Enter_LSEnter {
-            bindings = <&kp_ht ENTER LS(ENTER)>;
+        left_LSEnter {
+            bindings = <&kp LS(ENTER)>;
             key-positions = <32 24>;
+            layers = <0 1>;
         };
 
         left_LCEnter {
             bindings = <&kp LC(ENTER)>;
             key-positions = <32 14>;
+            layers = <0 1>;
         };
 
         left_LAEnter {
             bindings = <&kp LA(ENTER)>;
             key-positions = <32 4>;
+            layers = <0 1>;
         };
     };
 
@@ -184,10 +187,10 @@
 
         base_en {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R      &kp T                                  &kp Y      &kp U      &kp I  &kp O  &kp P
-  &kp A  &kp S  &kp D  &kp F      &kp G                                  &kp H      &kp J      &kp K  &kp L  &none
-  &kp Z  &kp X  &kp C  &kp V      &kp B                                  &kp N      &kp M      &none  &none  &kp DOT
-                       &board_en  &kp BACKSPACE  &kp SPACE    &kp COMMA  &kp UNDER  &board_ru
+  &kp Q  &kp W  &kp E  &kp R         &kp T                                  &kp Y      &kp U         &kp I  &kp O  &kp P
+  &kp A  &kp S  &kp D  &kp F         &kp G                                  &kp H      &kp J         &kp K  &kp L  &none
+  &kp Z  &kp X  &kp C  &kp V         &kp B                                  &kp N      &kp M         &none  &none  &kp DOT
+                       &td_board_en  &kp BACKSPACE  &kp SPACE    &kp COMMA  &kp UNDER  &td_board_ru
             >;
 
             display-name = "Base EN";
@@ -197,10 +200,10 @@
         base_ru {
             display-name = "Base RU";
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R      &td_ru_ye_yo                               &kp Y      &kp U             &kp I      &kp O    &td_ru_z_h
-  &kp A  &kp S  &kp D  &kp F      &kp G                                      &kp H      &kp J             &kp K      &kp L    &td_ru_zh_e
-  &kp Z  &kp X  &kp C  &kp V      &kp B                                      &kp N      &td_ru_soft_hard  &kp COMMA  &kp DOT  &kp SLASH
-                       &board_en  &kp BACKSPACE  &kp SPACE    &kp LS(SLASH)  &kp UNDER  &board_ru
+  &kp Q  &kp W  &kp E  &kp R         &td_ru_ye_yo                               &kp Y      &kp U             &kp I      &kp O    &td_ru_z_h
+  &kp A  &kp S  &kp D  &kp F         &kp G                                      &kp H      &kp J             &kp K      &kp L    &td_ru_zh_e
+  &kp Z  &kp X  &kp C  &kp V         &kp B                                      &kp N      &td_ru_soft_hard  &kp COMMA  &kp DOT  &kp SLASH
+                       &td_board_en  &kp BACKSPACE  &kp SPACE    &kp LS(SLASH)  &kp UNDER  &td_board_ru
             >;
         };
 
