@@ -87,7 +87,7 @@
 
         left_alt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <32 22>;
+            key-positions = <32 30>;
         };
 
         tab {
@@ -106,27 +106,55 @@
             layers = <0 1>;
         };
 
-        layer_switch_ru {
-            bindings = <&to 1>;
-            key-positions = <35 29>;
-            layers = <0>;
-        };
-
         full_switch_en {
             bindings = <&full_en>;
             key-positions = <31 30>;
             layers = <1 0>;
         };
 
-        layer_switch_en {
-            bindings = <&to 0>;
-            key-positions = <30 20>;
-            layers = <1>;
-        };
-
         enter {
             bindings = <&kp ENTER>;
             key-positions = <32 24>;
+        };
+
+        ctrl_c {
+            bindings = <&kp LC(C)>;
+            key-positions = <32 22>;
+        };
+
+        ctrl_v {
+            bindings = <&kp LC(V)>;
+            key-positions = <23 32>;
+        };
+
+        alt_tab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <30 10>;
+        };
+
+        left_ctrl_shift {
+            bindings = <&kp LC(LEFT_SHIFT)>;
+            key-positions = <20 21>;
+        };
+
+        left_ctrl_alt {
+            bindings = <&kp LC(LEFT_ALT)>;
+            key-positions = <21 30>;
+        };
+
+        left_shift_alt {
+            bindings = <&kp LS(LEFT_ALT)>;
+            key-positions = <30 20>;
+        };
+
+        left_ctrl_shift_alt {
+            bindings = <&kp LS(LC(LEFT_ALT))>;
+            key-positions = <30 20 21>;
+        };
+
+        win {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <33 27>;
         };
     };
 
@@ -259,10 +287,10 @@
 
         base_en {
             bindings = <
-  &kp Q         &kp W         &kp E         &kp R         &kp T                                  &kp Y      &kp U  &kp I  &kp O  &kp P
-  &auto_ctrl A  &auto_ctrl S  &kp D         &auto_ctrl F  &kp G                                  &kp H      &kp J  &kp K  &kp L  &none
-  &auto_ctrl Z  &auto_ctrl X  &auto_ctrl C  &auto_ctrl V  &auto_ctrl B                           &kp N      &kp M  &none  &none  &kp DOT
-                                            &none         &kp BACKSPACE  &kp SPACE    &kp COMMA  &kp UNDER  &none
+  &kp Q         &kp W         &kp E           &kp R         &kp T                                  &kp Y      &kp U  &kp I  &kp O  &kp P
+  &auto_ctrl A  &auto_ctrl S  &ht_kp LG(D) D  &auto_ctrl F  &kp G                                  &kp H      &kp J  &kp K  &kp L  &none
+  &auto_ctrl Z  &auto_ctrl X  &auto_ctrl C    &auto_ctrl V  &auto_ctrl B                           &kp N      &kp M  &none  &none  &kp DOT
+                                              &none         &kp BACKSPACE  &kp SPACE    &kp COMMA  &kp UNDER  &none
             >;
 
             display-name = "Base EN";
@@ -272,10 +300,10 @@
         base_ru {
             display-name = "Base RU";
             bindings = <
-  &kp Q         &kp W         &kp E         &kp R         &ye_yo                                     &kp Y      &kp U       &kp I      &kp O    &z_h
-  &auto_ctrl A  &auto_ctrl S  &kp D         &auto_ctrl F  &kp G                                      &kp H      &kp J       &kp K      &kp L    &zh_e
-  &auto_ctrl Z  &auto_ctrl X  &auto_ctrl C  &auto_ctrl V  &auto_ctrl B                               &kp N      &soft_hard  &kp COMMA  &kp DOT  &kp SLASH
-                                            &none         &kp BACKSPACE  &kp SPACE    &kp LS(SLASH)  &kp UNDER  &none
+  &kp Q         &kp W         &kp E           &kp R         &ye_yo                                     &kp Y      &kp U       &kp I      &kp O    &z_h
+  &auto_ctrl A  &auto_ctrl S  &ht_kp LG(D) D  &auto_ctrl F  &kp G                                      &kp H      &kp J       &kp K      &kp L    &zh_e
+  &auto_ctrl Z  &auto_ctrl X  &auto_ctrl C    &auto_ctrl V  &auto_ctrl B                               &kp N      &soft_hard  &kp COMMA  &kp DOT  &kp SLASH
+                                              &none         &kp BACKSPACE  &kp SPACE    &kp LS(SLASH)  &kp UNDER  &none
             >;
         };
 
