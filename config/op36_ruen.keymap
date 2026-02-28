@@ -103,7 +103,7 @@
         full_switch_ru {
             bindings = <&full_ru>;
             key-positions = <35 34>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         layer_switch_ru {
@@ -115,7 +115,7 @@
         full_switch_en {
             bindings = <&full_en>;
             key-positions = <31 30>;
-            layers = <1>;
+            layers = <1 0>;
         };
 
         layer_switch_en {
