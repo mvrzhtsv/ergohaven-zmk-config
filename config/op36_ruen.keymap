@@ -114,7 +114,7 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <32 24>;
+            key-positions = <32 14>;
         };
 
         ctrl_c {
