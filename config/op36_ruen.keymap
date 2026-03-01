@@ -215,6 +215,41 @@
             bindings = <&kp LS(DEL)>;
             key-positions = <20 31 32>;
         };
+
+        right_shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <33 29>;
+        };
+
+        right_ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <33 28>;
+        };
+
+        right_alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <33 35>;
+        };
+
+        right_ctrl_shift {
+            bindings = <&kp LC(LEFT_SHIFT)>;
+            key-positions = <28 29>;
+        };
+
+        right_ctrl_alt {
+            bindings = <&kp LC(LEFT_ALT)>;
+            key-positions = <35 28>;
+        };
+
+        right_shift_alt {
+            bindings = <&kp LS(LEFT_ALT)>;
+            key-positions = <35 29>;
+        };
+
+        right_ctrl_shift_alt {
+            bindings = <&kp LS(LC(LEFT_ALT))>;
+            key-positions = <35 28 29>;
+        };
     };
 
     macros {
