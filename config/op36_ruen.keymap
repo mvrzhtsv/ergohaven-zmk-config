@@ -166,8 +166,8 @@
             key-positions = <23 32>;
         };
 
-        alt_tab {
-            bindings = <&kp LA(TAB)>;
+        ctrl_alt_tab {
+            bindings = <&kp LA(LC(TAB))>;
             key-positions = <30 10>;
         };
 
@@ -249,6 +249,11 @@
         right_ctrl_shift_alt {
             bindings = <&kp LS(LC(LEFT_ALT))>;
             key-positions = <35 28 29>;
+        };
+
+        navigation {
+            bindings = <&mo 4>;
+            key-positions = <33 16>;
         };
     };
 
