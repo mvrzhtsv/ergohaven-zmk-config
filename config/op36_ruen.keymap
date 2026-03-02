@@ -250,11 +250,6 @@
             bindings = <&kp LS(LC(LEFT_ALT))>;
             key-positions = <35 28 29>;
         };
-
-        navigation {
-            bindings = <&mo 4>;
-            key-positions = <33 16>;
-        };
     };
 
     macros {
@@ -429,9 +424,9 @@
 
         navigation {
             bindings = <
-  &none  &none         &kp LG(UP_ARROW)    &none          &none                  &kp LS(HOME)  &kp LS(LEFT)     &kp UP_ARROW  &kp LS(RIGHT)     &kp LS(END)
-  &none  &kp LG(LEFT)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &none                  &kp HOME      &auto_ctrl LEFT  &kp DOWN      &auto_ctrl RIGHT  &kp END
-  &none  &none         &none               &none          &none                  &none         &kp PG_UP        &none         &kp PAGE_DOWN     &none
+  &none  &none         &kp LG(UP_ARROW)    &none          &none                  &kp LS(HOME)  &kp LS(LEFT)  &kp UP_ARROW  &kp LS(RIGHT)  &kp LS(END)
+  &none  &kp LG(LEFT)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &none                  &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT      &kp END
+  &none  &none         &none               &none          &none                  &none         &kp LC(LEFT)  &none         &kp LC(RIGHT)  &none
                                            &none          &mo 5  &none    &none  &none         &none
             >;
 
