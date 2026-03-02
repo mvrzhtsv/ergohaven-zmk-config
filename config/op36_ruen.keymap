@@ -381,10 +381,10 @@
 
         base_en {
             bindings = <
-  &kp Q         &kp W         &kp E              &kp R          &kp T                                         &kp Y      &kp U  &kp I  &kp O  &kp P
-  &auto_ctrl A  &auto_ctrl S  &ht_kp_kp LG(D) D  &auto_ctrl F   &kp G                                         &kp H      &kp J  &kp K  &kp L  &none
-  &auto_ctrl Z  &auto_ctrl X  &auto_ctrl C       &auto_ctrl V   &auto_ctrl B                                  &kp N      &kp M  &none  &none  &kp DOT
-                                                 &kp BACKSPACE  &lt 4 SPACE   &mo 2    &lt_hold_pref 4 UNDER  &kp COMMA  &none
+  &kp Q         &kp W         &kp E              &kp R         &kp T                                                             &kp Y      &kp U  &kp I  &kp O  &kp P
+  &auto_ctrl A  &auto_ctrl S  &ht_kp_kp LG(D) D  &auto_ctrl F  &kp G                                                             &kp H      &kp J  &kp K  &kp L  &none
+  &auto_ctrl Z  &auto_ctrl X  &auto_ctrl C       &auto_ctrl V  &auto_ctrl B                                                      &kp N      &kp M  &none  &none  &kp DOT
+                                                 &none         &lt 4 SPACE   &lt_hold_pref 2 BACKSPACE    &lt_hold_pref 4 UNDER  &kp COMMA  &none
             >;
 
             display-name = "Base EN";
@@ -394,19 +394,19 @@
         base_ru {
             display-name = "Base RU";
             bindings = <
-  &kp Q         &kp W         &kp E              &kp R          &ye_yo                                        &kp Y      &kp U       &kp I      &kp O    &z_h
-  &auto_ctrl A  &auto_ctrl S  &ht_kp_kp LG(D) D  &auto_ctrl F   &kp G                                         &kp H      &kp J       &kp K      &kp L    &zh_e
-  &auto_ctrl Z  &auto_ctrl X  &auto_ctrl C       &auto_ctrl V   &auto_ctrl B                                  &kp N      &soft_hard  &kp COMMA  &kp DOT  &en DOT
-                                                 &kp BACKSPACE  &lt 4 SPACE   &mo 3    &lt_hold_pref 4 UNDER  &en COMMA  &none
+  &kp Q         &kp W         &kp E              &kp R         &ye_yo                                                            &kp Y      &kp U       &kp I      &kp O    &z_h
+  &auto_ctrl A  &auto_ctrl S  &ht_kp_kp LG(D) D  &auto_ctrl F  &kp G                                                             &kp H      &kp J       &kp K      &kp L    &zh_e
+  &auto_ctrl Z  &auto_ctrl X  &auto_ctrl C       &auto_ctrl V  &auto_ctrl B                                                      &kp N      &soft_hard  &kp COMMA  &kp DOT  &en DOT
+                                                 &none         &lt 4 SPACE   &lt_hold_pref 3 BACKSPACE    &lt_hold_pref 4 UNDER  &en COMMA  &none
             >;
         };
 
         sym_num_en {
             bindings = <
-  &ht_kp_kp PIPE AMPERSAND          &ht_kp_kp BACKSLASH SLASH         &ht_kp_kp DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                         &kp SEMI   &ht_kp_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &kp COLON
-  &ht_kp_kp GREATER_THAN LESS_THAN  &ht_kp_kp RIGHT_BRACE LEFT_BRACE  &ht_kp_kp RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                         &kp MINUS  &ht_kp_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_kp_kp CARET N6  &kp N0
-  &kp CAPSLOCK                      &kp PRINTSCREEN                   &kp LC(SLASH)                         &none                                         &none                          &none      &ht_kp_kp EXCL N1      &ht_kp_kp AT N2        &ht_kp_kp HASH N3   &kp DOT
-                                                                                                            &kp BACKSPACE                                 &kp SPACE  &none    &kp UNDER  &kp COMMA  &none
+  &ht_kp_kp PIPE AMPERSAND          &ht_kp_kp BACKSLASH SLASH         &ht_kp_kp DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                                 &kp SEMI   &ht_kp_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &kp COLON
+  &ht_kp_kp GREATER_THAN LESS_THAN  &ht_kp_kp RIGHT_BRACE LEFT_BRACE  &ht_kp_kp RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                                 &kp MINUS  &ht_kp_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_kp_kp CARET N6  &kp N0
+  &kp CAPSLOCK                      &kp PRINTSCREEN                   &kp LC(SLASH)                         &none                                         &none                                  &none      &ht_kp_kp EXCL N1      &ht_kp_kp AT N2        &ht_kp_kp HASH N3   &kp DOT
+                                                                                                            &none                                         &kp SPACE  &kp BACKSPACE    &kp UNDER  &kp COMMA  &none
             >;
 
             label = "Sym Num EN";
@@ -415,10 +415,10 @@
         sym_num_ru {
             label = "Sym Num RU";
             bindings = <
-  &ht_en_en PIPE AMPERSAND          &ht_en_en BACKSLASH SLASH         &ht_en_en DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                         &en SEMI   &ht_en_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &en COLON
-  &ht_en_en GREATER_THAN LESS_THAN  &ht_en_en RIGHT_BRACE LEFT_BRACE  &ht_en_en RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                         &kp MINUS  &ht_en_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_en_kp CARET N6  &kp N0
-  &kp CAPSLOCK                      &kp PRINTSCREEN                   &kp LC(SLASH)                         &none                                         &none                          &none      &ht_kp_kp EXCL N1      &ht_en_kp AT N2        &ht_en_kp HASH N3   &en DOT
-                                                                                                            &kp BACKSPACE                                 &kp SPACE  &none    &en UNDER  &kp COMMA  &none
+  &ht_en_en PIPE AMPERSAND          &ht_en_en BACKSLASH SLASH         &ht_en_en DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                                 &en SEMI   &ht_en_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &en COLON
+  &ht_en_en GREATER_THAN LESS_THAN  &ht_en_en RIGHT_BRACE LEFT_BRACE  &ht_en_en RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                                 &kp MINUS  &ht_en_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_en_kp CARET N6  &kp N0
+  &kp CAPSLOCK                      &kp PRINTSCREEN                   &kp LC(SLASH)                         &none                                         &none                                  &none      &ht_kp_kp EXCL N1      &ht_en_kp AT N2        &ht_en_kp HASH N3   &en DOT
+                                                                                                            &none                                         &kp SPACE  &kp BACKSPACE    &en UNDER  &kp COMMA  &none
             >;
         };
 
