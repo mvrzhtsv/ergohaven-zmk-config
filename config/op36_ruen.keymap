@@ -116,38 +116,38 @@
 
         left_shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <20 31>;
+            key-positions = <20 32>;
         };
 
         left_ctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <21 31>;
+            key-positions = <21 32>;
         };
 
         left_alt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <30 31>;
+            key-positions = <30 32>;
         };
 
         tab {
             bindings = <&auto_shift TAB>;
-            key-positions = <10 31>;
+            key-positions = <10 32>;
         };
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <0 31>;
+            key-positions = <0 32>;
         };
 
         full_switch_ru {
             bindings = <&full_ru>;
-            key-positions = <27 28>;
+            key-positions = <7 8>;
             layers = <0 1>;
         };
 
         full_switch_en {
             bindings = <&full_en>;
-            key-positions = <21 22>;
+            key-positions = <1 2>;
             layers = <1 0>;
         };
 
@@ -158,12 +158,12 @@
 
         ctrl_c {
             bindings = <&kp LC(C)>;
-            key-positions = <22 31>;
+            key-positions = <22 21>;
         };
 
         ctrl_v {
             bindings = <&kp LC(V)>;
-            key-positions = <23 31>;
+            key-positions = <23 21>;
         };
 
         ctrl_alt_tab {
@@ -193,42 +193,32 @@
 
         win {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <27 34>;
-        };
-
-        shift_enter {
-            bindings = <&kp LS(ENTER)>;
-            key-positions = <20 14>;
-        };
-
-        ctrl_enter {
-            bindings = <&kp LC(ENTER)>;
-            key-positions = <21 14>;
+            key-positions = <27 33>;
         };
 
         delete {
             bindings = <&kp DEL>;
-            key-positions = <31 32>;
+            key-positions = <31 30>;
         };
 
         shift_delete {
             bindings = <&kp LS(DEL)>;
-            key-positions = <20 31 32>;
+            key-positions = <20 31 30>;
         };
 
         right_shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <29 34>;
+            key-positions = <29 33>;
         };
 
         right_ctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <28 34>;
+            key-positions = <28 33>;
         };
 
         right_alt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <35 34>;
+            key-positions = <35 33>;
         };
 
         right_ctrl_shift {
@@ -403,10 +393,10 @@
 
         sym_num_en {
             bindings = <
-  &ht_kp_kp PIPE AMPERSAND          &ht_kp_kp BACKSLASH SLASH         &ht_kp_kp DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                                 &kp SEMI   &ht_kp_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &kp COLON
+  &ht_kp_kp PIPE AMPERSAND          &ht_kp_kp BACKSLASH SLASH         &ht_kp_kp DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                                 &none      &ht_kp_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &kp COLON
   &ht_kp_kp GREATER_THAN LESS_THAN  &ht_kp_kp RIGHT_BRACE LEFT_BRACE  &ht_kp_kp RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                                 &kp MINUS  &ht_kp_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_kp_kp CARET N6  &kp N0
-  &kp CAPSLOCK                      &kp PRINTSCREEN                   &kp LC(SLASH)                         &none                                         &none                                  &none      &ht_kp_kp EXCL N1      &ht_kp_kp AT N2        &ht_kp_kp HASH N3   &kp DOT
-                                                                                                            &none                                         &kp SPACE  &kp BACKSPACE    &kp UNDER  &kp COMMA  &none
+  &kp LS(ENTER)                     &kp LC(ENTER)                     &kp LC(SLASH)                         &none                                         &none                                  &kp SEMI   &ht_kp_kp EXCL N1      &ht_kp_kp AT N2        &ht_kp_kp HASH N3   &kp DOT
+                                                                                                            &none                                         &kp BACKSPACE  &kp SPACE    &kp COMMA  &kp UNDER  &none
             >;
 
             label = "Sym Num EN";
@@ -415,19 +405,19 @@
         sym_num_ru {
             label = "Sym Num RU";
             bindings = <
-  &ht_en_en PIPE AMPERSAND          &ht_en_en BACKSLASH SLASH         &ht_en_en DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                                 &en SEMI   &ht_en_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &en COLON
+  &ht_en_en PIPE AMPERSAND          &ht_en_en BACKSLASH SLASH         &ht_en_en DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                                 &none      &ht_en_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &en COLON
   &ht_en_en GREATER_THAN LESS_THAN  &ht_en_en RIGHT_BRACE LEFT_BRACE  &ht_en_en RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                                 &kp MINUS  &ht_en_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_en_kp CARET N6  &kp N0
-  &kp CAPSLOCK                      &kp PRINTSCREEN                   &kp LC(SLASH)                         &none                                         &none                                  &none      &ht_kp_kp EXCL N1      &ht_en_kp AT N2        &ht_en_kp HASH N3   &en DOT
-                                                                                                            &none                                         &kp SPACE  &kp BACKSPACE    &en UNDER  &kp COMMA  &none
+  &kp LS(ENTER)                     &kp LC(ENTER)                     &en LC(SLASH)                         &none                                         &none                                  &en SEMI   &ht_kp_kp EXCL N1      &ht_en_kp AT N2        &ht_en_kp HASH N3   &en DOT
+                                                                                                            &none                                         &kp BACKSPACE  &kp SPACE    &en COMMA  &kp UNDER  &none
             >;
         };
 
         navigation {
             bindings = <
-  &none  &none         &kp LG(UP_ARROW)    &none          &none                  &kp LS(HOME)  &kp LS(LEFT)  &kp UP_ARROW  &kp LS(RIGHT)  &kp LS(END)
-  &none  &kp LG(LEFT)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &none                  &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT      &kp END
-  &none  &none         &none               &none          &none                  &none         &kp LC(LEFT)  &none         &kp LC(RIGHT)  &none
-                                           &none          &none  &mo 5    &none  &none         &none
+  &kp PRINTSCREEN  &none         &kp LG(UP_ARROW)    &none          &none                  &kp LS(HOME)  &kp LS(LEFT)  &kp UP_ARROW  &kp LS(RIGHT)  &kp LS(END)
+  &none            &kp LG(LEFT)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &none                  &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT      &kp END
+  &kp CLCK         &none         &none               &none          &none                  &none         &kp LC(LEFT)  &none         &kp LC(RIGHT)  &none
+                                                     &none          &none  &mo 5    &none  &none         &none
             >;
 
             label = "Navigation";
