@@ -141,13 +141,13 @@
 
         full_switch_ru {
             bindings = <&full_ru>;
-            key-positions = <7 8>;
+            key-positions = <17 18>;
             layers = <0 1>;
         };
 
         full_switch_en {
             bindings = <&full_en>;
-            key-positions = <1 2>;
+            key-positions = <11 12>;
             layers = <1 0>;
         };
 
@@ -393,10 +393,10 @@
 
         sym_num_en {
             bindings = <
-  &ht_kp_kp PIPE AMPERSAND          &ht_kp_kp BACKSLASH SLASH         &ht_kp_kp DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                                 &none      &ht_kp_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &kp COLON
-  &ht_kp_kp GREATER_THAN LESS_THAN  &ht_kp_kp RIGHT_BRACE LEFT_BRACE  &ht_kp_kp RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                                 &kp MINUS  &ht_kp_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_kp_kp CARET N6  &kp N0
-  &kp LS(ENTER)                     &kp LC(ENTER)                     &kp LC(SLASH)                         &none                                         &none                                  &kp SEMI   &ht_kp_kp EXCL N1      &ht_kp_kp AT N2        &ht_kp_kp HASH N3   &kp DOT
-                                                                                                            &none                                         &kp BACKSPACE  &kp SPACE    &kp COMMA  &kp UNDER  &none
+  &ht_kp_kp PIPE AMPERSAND          &ht_kp_kp BACKSLASH SLASH         &ht_kp_kp DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                              &kp SEMI   &ht_kp_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &kp COLON
+  &ht_kp_kp GREATER_THAN LESS_THAN  &ht_kp_kp RIGHT_BRACE LEFT_BRACE  &ht_kp_kp RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                              &kp MINUS  &ht_kp_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_kp_kp CARET N6  &kp UNDER
+  &kp LS(ENTER)                     &kp LC(ENTER)                     &kp LC(SLASH)                         &none                                         &none                               &kp COMMA  &ht_kp_kp EXCL N1      &ht_kp_kp AT N2        &ht_kp_kp HASH N3   &kp DOT
+                                                                                                            &none                                         &kp BACKSPACE  &kp SPACE    &kp N0  &none      &none
             >;
 
             label = "Sym Num EN";
@@ -405,10 +405,10 @@
         sym_num_ru {
             label = "Sym Num RU";
             bindings = <
-  &ht_en_en PIPE AMPERSAND          &ht_en_en BACKSLASH SLASH         &ht_en_en DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                                 &none      &ht_en_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &en COLON
-  &ht_en_en GREATER_THAN LESS_THAN  &ht_en_en RIGHT_BRACE LEFT_BRACE  &ht_en_en RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                                 &kp MINUS  &ht_en_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_en_kp CARET N6  &kp N0
-  &kp LS(ENTER)                     &kp LC(ENTER)                     &en LC(SLASH)                         &none                                         &none                                  &en SEMI   &ht_kp_kp EXCL N1      &ht_en_kp AT N2        &ht_en_kp HASH N3   &en DOT
-                                                                                                            &none                                         &kp BACKSPACE  &kp SPACE    &en COMMA  &kp UNDER  &none
+  &ht_en_en PIPE AMPERSAND          &ht_en_en BACKSLASH SLASH         &ht_en_en DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                              &en SEMI   &ht_en_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &en COLON
+  &ht_en_en GREATER_THAN LESS_THAN  &ht_en_en RIGHT_BRACE LEFT_BRACE  &ht_en_en RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                              &kp MINUS  &ht_en_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_en_kp CARET N6  &kp UNDER
+  &kp LS(ENTER)                     &kp LC(ENTER)                     &en LC(SLASH)                         &none                                         &none                               &en COMMA  &ht_kp_kp EXCL N1      &ht_en_kp AT N2        &ht_en_kp HASH N3   &en DOT
+                                                                                                            &none                                         &kp BACKSPACE  &kp SPACE    &kp N0  &none      &none
             >;
         };
 
