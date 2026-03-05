@@ -116,7 +116,7 @@
 
         left_shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <20 32>;
+            key-positions = <32 11>;
         };
 
         left_ctrl {
@@ -141,29 +141,19 @@
 
         full_switch_ru {
             bindings = <&full_ru>;
-            key-positions = <17 18>;
+            key-positions = <27 28>;
             layers = <0 1>;
         };
 
         full_switch_en {
             bindings = <&full_en>;
-            key-positions = <11 12>;
+            key-positions = <21 22>;
             layers = <1 0>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <32 14>;
-        };
-
-        ctrl_c {
-            bindings = <&kp LC(C)>;
-            key-positions = <22 21>;
-        };
-
-        ctrl_v {
-            bindings = <&kp LC(V)>;
-            key-positions = <23 21>;
         };
 
         ctrl_alt_tab {
@@ -196,19 +186,14 @@
             key-positions = <27 33>;
         };
 
-        delete {
-            bindings = <&kp DEL>;
-            key-positions = <31 30>;
-        };
-
         shift_delete {
             bindings = <&kp LS(DEL)>;
-            key-positions = <20 31 30>;
+            key-positions = <20 24>;
         };
 
         right_shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <29 33>;
+            key-positions = <33 18>;
         };
 
         right_ctrl {
@@ -395,8 +380,8 @@
             bindings = <
   &ht_kp_kp PIPE AMPERSAND          &ht_kp_kp BACKSLASH SLASH         &ht_kp_kp DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                              &kp SEMI   &ht_kp_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &kp COLON
   &ht_kp_kp GREATER_THAN LESS_THAN  &ht_kp_kp RIGHT_BRACE LEFT_BRACE  &ht_kp_kp RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                              &kp MINUS  &ht_kp_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_kp_kp CARET N6  &kp UNDER
-  &kp LS(ENTER)                     &kp LC(ENTER)                     &kp LC(SLASH)                         &none                                         &none                               &kp COMMA  &ht_kp_kp EXCL N1      &ht_kp_kp AT N2        &ht_kp_kp HASH N3   &kp DOT
-                                                                                                            &none                                         &kp BACKSPACE  &kp SPACE    &kp N0  &none      &none
+  &kp LS(ENTER)                     &kp LC(ENTER)                     &kp LC(C)                             &kp LC(V)                                     &kp DEL                             &kp COMMA  &ht_kp_kp EXCL N1      &ht_kp_kp AT N2        &ht_kp_kp HASH N3   &kp DOT
+                                                                                                            &kp LC(SLASH)                                 &kp BACKSPACE  &kp SPACE    &kp N0  &none      &none
             >;
 
             label = "Sym Num EN";
@@ -407,8 +392,8 @@
             bindings = <
   &ht_en_en PIPE AMPERSAND          &ht_en_en BACKSLASH SLASH         &ht_en_en DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                              &en SEMI   &ht_en_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &en COLON
   &ht_en_en GREATER_THAN LESS_THAN  &ht_en_en RIGHT_BRACE LEFT_BRACE  &ht_en_en RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                              &kp MINUS  &ht_en_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_en_kp CARET N6  &kp UNDER
-  &kp LS(ENTER)                     &kp LC(ENTER)                     &en LC(SLASH)                         &none                                         &none                               &en COMMA  &ht_kp_kp EXCL N1      &ht_en_kp AT N2        &ht_en_kp HASH N3   &en DOT
-                                                                                                            &none                                         &kp BACKSPACE  &kp SPACE    &kp N0  &none      &none
+  &kp LS(ENTER)                     &kp LC(ENTER)                     &kp LC(C)                             &kp LC(V)                                     &kp DEL                             &en COMMA  &ht_kp_kp EXCL N1      &ht_en_kp AT N2        &ht_en_kp HASH N3   &en DOT
+                                                                                                            &en LC(SLASH)                                 &kp BACKSPACE  &kp SPACE    &kp N0  &none      &none
             >;
         };
 
