@@ -27,20 +27,6 @@
             bindings = <&kp SEMICOLON>, <&kp SINGLE_QUOTE>;
         };
 
-        ye_yo: ye_yo {
-            compatible = "zmk,behavior-tap-dance";
-            label = "YE_YO";
-            #binding-cells = <0>;
-            bindings = <&kp T>, <&kp GRAVE>;
-        };
-
-        soft_hard: soft_hard {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SOFT_HARD";
-            #binding-cells = <0>;
-            bindings = <&kp M>, <&kp RIGHT_BRACKET>;
-        };
-
         ht_kp_kp: ht_kp_kp {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_KP_KP";
@@ -108,6 +94,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
         };
     };
 
@@ -116,7 +103,7 @@
 
         left_shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <32 11>;
+            key-positions = <11 12>;
         };
 
         left_ctrl {
@@ -193,7 +180,7 @@
 
         right_shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <33 18>;
+            key-positions = <18 17>;
         };
 
         right_ctrl {
