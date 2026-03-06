@@ -103,7 +103,7 @@
 
         left_shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <11 12>;
+            key-positions = <20 32>;
         };
 
         left_ctrl {
@@ -180,7 +180,7 @@
 
         right_shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <18 17>;
+            key-positions = <33 29>;
         };
 
         right_ctrl {
