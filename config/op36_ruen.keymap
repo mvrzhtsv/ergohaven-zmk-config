@@ -343,27 +343,27 @@
 
         base_en {
             bindings = <
-  &kp Q         &kp W         &kp E              &kp R         &kp T                                                            &kp Y      &kp U  &kp I  &kp O  &kp P
-  &auto_ctrl A  &auto_ctrl S  &ht_kp_kp LG(D) D  &auto_ctrl F  &kp G                                                            &kp H      &kp J  &kp K  &kp L  &none
-  &auto_ctrl Z  &auto_ctrl X  &auto_ctrl C       &auto_ctrl V  &auto_ctrl B                                                     &kp N      &kp M  &none  &none  &kp DOT
-                                                 &none         &lt_hold_pref 2 BACKSPACE  &lt 4 SPACE    &lt_hold_pref 4 COMMA  &kp UNDER  &none
+  &kp Q         &kp W         &kp E              &kp R         &kp T                                                          &kp Y      &kp U  &kp I  &kp O  &kp P
+  &auto_ctrl A  &auto_ctrl S  &ht_kp_kp LG(D) D  &auto_ctrl F  &kp G                                                          &kp H      &kp J  &kp K  &kp L  &none
+  &auto_ctrl Z  &auto_ctrl X  &auto_ctrl C       &auto_ctrl V  &auto_ctrl B                                                   &kp N      &kp M  &none  &none  &kp DOT
+                                                 &none         &lt_hold_pref 2 BACKSPACE  &kp SPACE    &lt_hold_pref 4 COMMA  &kp UNDER  &none
             >;
 
-            display-name = "Base EN";
+            display-name = "EN";
             label = "Base EN";
         };
 
         base_ru {
             display-name = "Base RU";
             bindings = <
-  &kp Q         &kp W         &kp E              &kp R         &ht_kp_kp GRAVE T                                                    &kp Y      &kp U                      &kp I      &kp O    &z_h
-  &auto_ctrl A  &auto_ctrl S  &ht_kp_kp LG(D) D  &auto_ctrl F  &kp G                                                                &kp H      &kp J                      &kp K      &kp L    &zh_e
-  &auto_ctrl Z  &auto_ctrl X  &auto_ctrl C       &auto_ctrl V  &auto_ctrl B                                                         &kp N      &ht_kp_kp RIGHT_BRACKET M  &kp COMMA  &kp DOT  &en DOT
-                                                 &none         &lt_hold_pref 3 BACKSPACE  &lt 4 SPACE    &lt_hold_pref 4 LS(SLASH)  &kp UNDER  &none
+  &kp Q         &kp W         &kp E              &kp R         &ht_kp_kp GRAVE T                                                  &kp Y      &kp U                      &kp I      &kp O    &z_h
+  &auto_ctrl A  &auto_ctrl S  &ht_kp_kp LG(D) D  &auto_ctrl F  &kp G                                                              &kp H      &kp J                      &kp K      &kp L    &zh_e
+  &auto_ctrl Z  &auto_ctrl X  &auto_ctrl C       &auto_ctrl V  &auto_ctrl B                                                       &kp N      &ht_kp_kp RIGHT_BRACKET M  &kp COMMA  &kp DOT  &en DOT
+                                                 &none         &lt_hold_pref 3 BACKSPACE  &kp SPACE    &lt_hold_pref 4 LS(SLASH)  &kp UNDER  &none
             >;
         };
 
-        sym_num_en {
+        sym_en {
             bindings = <
   &ht_kp_kp PIPE AMPERSAND          &ht_kp_kp BACKSLASH SLASH         &ht_kp_kp DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                              &kp SEMI   &ht_kp_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &kp COLON
   &ht_kp_kp GREATER_THAN LESS_THAN  &ht_kp_kp RIGHT_BRACE LEFT_BRACE  &ht_kp_kp RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                              &kp MINUS  &ht_kp_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_kp_kp CARET N6  &kp UNDER
@@ -371,11 +371,11 @@
                                                                                                             &kp LC(SLASH)                                 &kp BACKSPACE  &kp SPACE    &kp N0  &none      &none
             >;
 
-            label = "Sym Num EN";
+            label = "Sym EN";
         };
 
-        sym_num_ru {
-            label = "Sym Num RU";
+        sym_ru {
+            label = "Sym RU";
             bindings = <
   &ht_en_en PIPE AMPERSAND          &ht_en_en BACKSLASH SLASH         &ht_en_en DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                              &en SEMI   &ht_en_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &en COLON
   &ht_en_en GREATER_THAN LESS_THAN  &ht_en_en RIGHT_BRACE LEFT_BRACE  &ht_en_en RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                              &kp MINUS  &ht_en_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_en_kp CARET N6  &kp UNDER
@@ -384,7 +384,7 @@
             >;
         };
 
-        navigation {
+        nav {
             bindings = <
   &kp PRINTSCREEN  &none         &kp LG(UP_ARROW)    &none          &none                  &kp LS(HOME)  &kp LS(LEFT)  &kp UP_ARROW  &kp LS(RIGHT)  &kp LS(END)
   &none            &kp LG(LEFT)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &none                  &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT      &kp END
@@ -392,7 +392,7 @@
                                                      &none          &none  &mo 5    &none  &none         &none
             >;
 
-            label = "Navigation";
+            label = "Nav";
         };
 
         controls {
