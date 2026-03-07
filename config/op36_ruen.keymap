@@ -349,7 +349,7 @@
                                                  &none         &lt_hold_pref 2 BACKSPACE  &kp SPACE    &lt_hold_pref 4 COMMA  &kp UNDER  &none
             >;
 
-            display-name = "EN";
+            display-name = "Base EN";
             label = "Base EN";
         };
 
