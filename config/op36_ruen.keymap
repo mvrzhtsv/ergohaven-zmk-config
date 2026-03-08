@@ -366,9 +366,9 @@
         sym_en {
             bindings = <
   &ht_kp_kp PIPE AMPERSAND          &ht_kp_kp BACKSLASH SLASH         &ht_kp_kp DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                              &kp SEMI   &ht_kp_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &kp COLON
-  &ht_kp_kp GREATER_THAN LESS_THAN  &ht_kp_kp RIGHT_BRACE LEFT_BRACE  &ht_kp_kp RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                              &kp MINUS  &ht_kp_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_kp_kp CARET N6  &kp UNDER
+  &ht_kp_kp GREATER_THAN LESS_THAN  &ht_kp_kp RIGHT_BRACE LEFT_BRACE  &ht_kp_kp RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                              &kp MINUS  &ht_kp_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_kp_kp CARET N6  &kp SPACE
   &kp LS(ENTER)                     &kp LC(ENTER)                     &kp LC(C)                             &kp LC(V)                                     &kp DEL                             &kp COMMA  &ht_kp_kp EXCL N1      &ht_kp_kp AT N2        &ht_kp_kp HASH N3   &kp DOT
-                                                                                                            &kp LC(SLASH)                                 &kp BACKSPACE  &kp SPACE    &kp N0  &kp SPACE  &none
+                                                                                                            &kp LC(SLASH)                                 &kp BACKSPACE  &kp SPACE    &kp N0  &kp UNDER  &none
             >;
 
             label = "Sym EN";
@@ -378,9 +378,9 @@
             label = "Sym RU";
             bindings = <
   &ht_en_en PIPE AMPERSAND          &ht_en_en BACKSLASH SLASH         &ht_en_en DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                              &en SEMI   &ht_en_kp QUESTION N7  &ht_kp_kp ASTERISK N8  &kp N9              &en COLON
-  &ht_en_en GREATER_THAN LESS_THAN  &ht_en_en RIGHT_BRACE LEFT_BRACE  &ht_en_en RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                              &kp MINUS  &ht_en_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_en_kp CARET N6  &kp UNDER
+  &ht_en_en GREATER_THAN LESS_THAN  &ht_en_en RIGHT_BRACE LEFT_BRACE  &ht_en_en RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                              &kp MINUS  &ht_en_kp DOLLAR N4    &ht_kp_kp PRCNT N5     &ht_en_kp CARET N6  &kp SPACE
   &kp LS(ENTER)                     &kp LC(ENTER)                     &kp LC(C)                             &kp LC(V)                                     &kp DEL                             &en COMMA  &ht_kp_kp EXCL N1      &ht_en_kp AT N2        &ht_en_kp HASH N3   &en DOT
-                                                                                                            &en LC(SLASH)                                 &kp BACKSPACE  &kp SPACE    &kp N0  &kp SPACE  &none
+                                                                                                            &en LC(SLASH)                                 &kp BACKSPACE  &kp SPACE    &kp N0  &kp UNDER  &none
             >;
         };
 
