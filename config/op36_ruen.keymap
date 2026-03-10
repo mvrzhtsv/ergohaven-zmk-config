@@ -133,7 +133,7 @@
         };
 
         esc {
-            bindings = <&kp ESC>;
+            bindings = <&ht_kp_kp LA(F4) ESC>;
             key-positions = <0 32>;
         };
 
