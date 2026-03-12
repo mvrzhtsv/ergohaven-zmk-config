@@ -244,6 +244,11 @@
             bindings = <&kp LC(V)>;
             key-positions = <23 31>;
         };
+
+        space_eq_space {
+            bindings = <&space_eq_space>;
+            key-positions = <32 3>;
+        };
     };
 
     macros {
@@ -367,6 +372,20 @@
             label = "SYS_EN";
             wait-ms = <0>;
             tap-ms = <30>;
+        };
+
+        space_eq_space: space_eq_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_tap>,
+                <&kp EQUAL>,
+                <&macro_tap>,
+                <&kp SPACE>;
+
+            label = "SPACE_EQ_SPACE";
         };
     };
 
