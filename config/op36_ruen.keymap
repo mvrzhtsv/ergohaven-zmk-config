@@ -150,13 +150,13 @@
 
         full_switch_ru {
             bindings = <&full_ru>;
-            key-positions = <27 28>;
+            key-positions = <17 18>;
             layers = <0 1>;
         };
 
         full_switch_en {
             bindings = <&full_en>;
-            key-positions = <21 22>;
+            key-positions = <11 12>;
             layers = <1 0>;
         };
 
@@ -237,12 +237,12 @@
 
         ctrl_c {
             bindings = <&kp LC(C)>;
-            key-positions = <22 31>;
+            key-positions = <22 21>;
         };
 
         ctrl_v {
             bindings = <&kp LC(V)>;
-            key-positions = <23 31>;
+            key-positions = <23 22>;
         };
 
         space_eq_space {
