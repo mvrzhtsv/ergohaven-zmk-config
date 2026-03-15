@@ -459,10 +459,10 @@
 
         nav {
             bindings = <
-  &kp PRINTSCREEN  &none         &kp LG(UP_ARROW)    &none          &none                  &none             &kp LS(LEFT)  &kp UP_ARROW  &kp LS(RIGHT)  &none
-  &none            &kp LG(LEFT)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &none                  &auto_shift HOME  &kp LEFT      &kp DOWN      &kp RIGHT      &auto_shift END
-  &kp CLCK         &none         &none               &none          &none                  &none             &kp LC(LEFT)  &none         &kp LC(RIGHT)  &none
-                                                     &none          &none  &mo 7    &none  &none             &none
+  &kp PRINTSCREEN  &none         &kp LG(UP_ARROW)    &none          &none                  &kp LS(HOME)  &kp LS(LEFT)  &kp UP_ARROW  &kp LS(RIGHT)  &kp LS(END)
+  &none            &kp LG(LEFT)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &none                  &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT      &kp END
+  &kp CLCK         &none         &none               &none          &none                  &none         &kp LC(LEFT)  &none         &kp LC(RIGHT)  &none
+                                                     &none          &none  &mo 7    &none  &none         &none
             >;
 
             label = "Nav";
