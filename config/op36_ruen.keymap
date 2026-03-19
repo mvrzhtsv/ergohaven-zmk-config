@@ -418,7 +418,7 @@
             bindings = <
   &ht_kp_kp PIPE AMPERSAND          &ht_kp_kp BACKSLASH SLASH         &ht_kp_kp DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                     &none      &none  &none  &none  &none
   &ht_kp_kp GREATER_THAN LESS_THAN  &ht_kp_kp RIGHT_BRACE LEFT_BRACE  &ht_kp_kp RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                     &none      &none  &none  &none  &none
-  &kp LS(ENTER)                     &kp LC(ENTER)                     &kp LC(SLASH)                         &none                                         &none                      &none      &none  &none  &none  &kp COLON
+  &kp LS(ENTER)                     &kp LC(ENTER)                     &kp LC(SLASH)                         &kp LS(LC(V))                                 &none                      &none      &none  &none  &none  &kp COLON
                                                                                                             &none                                         &none   &none    &kp SEMI  &kp MINUS  &none
             >;
 
@@ -430,7 +430,7 @@
             bindings = <
   &ht_en_en PIPE AMPERSAND          &ht_en_en BACKSLASH SLASH         &ht_en_en DOUBLE_QUOTES SINGLE_QUOTE  &ht_kp_kp PLUS EQUAL                          &kp F2                     &none      &none  &none  &none  &none
   &ht_en_en GREATER_THAN LESS_THAN  &ht_en_en RIGHT_BRACE LEFT_BRACE  &ht_en_en RIGHT_BRACKET LEFT_BRACKET  &ht_kp_kp RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp F4                     &none      &none  &none  &none  &none
-  &kp LS(ENTER)                     &kp LC(ENTER)                     &en LC(SLASH)                         &none                                         &none                      &none      &none  &none  &none  &en COLON
+  &kp LS(ENTER)                     &kp LC(ENTER)                     &en LC(SLASH)                         &kp LS(LC(V))                                 &none                      &none      &none  &none  &none  &en COLON
                                                                                                             &none                                         &none   &none    &en SEMI  &kp MINUS  &none
             >;
         };
