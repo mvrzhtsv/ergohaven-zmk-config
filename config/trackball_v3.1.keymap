@@ -22,8 +22,8 @@
     combos {
         compatible = "zmk,combos";
 
-        mb_2 {
-            bindings = <&mkp MB2>;
+        mb3_scroll {
+            bindings = <&hold_mo_tap_mkp 1 MB3>;
             key-positions = <0 1>;
         };
     };
@@ -53,6 +53,13 @@
             hold-while-undecided;
             hold-while-undecided-linger;
         };
+
+        td_mb2_prev: td_mb2_prev {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_MB2_PREV";
+            #binding-cells = <0>;
+            bindings = <&mkp MB2>, <&mkp MB4>;
+        };
     };
 
     keymap {
@@ -60,7 +67,7 @@
 
         base {
             bindings = <
-&mkp MB1  &mo 1
+&mkp MB1  &td_mb2_prev
 &adj1     &adj2
             >;
 
