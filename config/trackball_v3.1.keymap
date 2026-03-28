@@ -60,6 +60,17 @@
             #binding-cells = <0>;
             bindings = <&mkp MB2>, <&mkp MB4>;
         };
+
+        ht_mkp_mkp: ht_mkp_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_MKP_MKP";
+            bindings = <&mkp>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-while-undecided-linger;
+        };
     };
 
     keymap {
@@ -67,7 +78,7 @@
 
         base {
             bindings = <
-&mkp MB1  &td_mb2_prev
+&mkp MB1  &ht_mkp_mkp MB4 MB2
 &adj1     &adj2
             >;
 
