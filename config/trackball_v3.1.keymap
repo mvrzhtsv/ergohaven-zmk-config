@@ -22,8 +22,8 @@
     combos {
         compatible = "zmk,combos";
 
-        base_combo {
-            bindings = <&hold_mo_tap_mkp 1 MB3>;
+        mb_2 {
+            bindings = <&mkp MB2>;
             key-positions = <0 1>;
         };
     };
@@ -60,8 +60,8 @@
 
         base {
             bindings = <
-&mkp MB1  &hold_mo_tap_mkp 2 MB2
-&adj1     &adj2
+&mo 1  &mkp MB1
+&adj1  &adj2
             >;
 
             display-name = "Base";
