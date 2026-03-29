@@ -76,8 +76,8 @@
 
         base {
             bindings = <
-&ht_mkp_mkp MB4 MB2  &mkp MB1
-&adj1                &adj2
+&mkp MB1  &ht_mkp_mkp MB4 MB2
+&adj1     &adj2
             >;
 
             display-name = "Base";
