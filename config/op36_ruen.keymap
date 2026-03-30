@@ -249,6 +249,11 @@
             bindings = <&space_eq_space>;
             key-positions = <32 3>;
         };
+
+        space_minus_space {
+            bindings = <&space_minus_space>;
+            key-positions = <31 34>;
+        };
     };
 
     macros {
@@ -407,6 +412,20 @@
             #binding-cells = <0>;
             bindings = <&sys_en &insert_time &sys_ru>;
             label = "INSERT_TIME_RU";
+        };
+
+        space_minus_space: space_dash_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_tap>,
+                <&kp MINUS>,
+                <&macro_tap>,
+                <&kp SPACE>;
+
+            label = "SPACE_DASH_SPACE";
         };
     };
 
