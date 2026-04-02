@@ -23,7 +23,7 @@
         compatible = "zmk,combos";
 
         mb3_scroll {
-            bindings = <&hold_mo_tap_mkp 1 MB3>;
+            bindings = <&ht_mo_mkp 1 MB3>;
             key-positions = <0 1>;
         };
     };
@@ -43,9 +43,9 @@
             bindings = <&bt BT_NXT>, <&bt BT_CLR_ALL>;
         };
 
-        hold_mo_tap_mkp: hold_mo_tap_mkp {
+        ht_mo_mkp: ht_mo_mkp {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_MO_TAP_MKP";
+            label = "HT_MO_MKP";
             bindings = <&mo>, <&mkp>;
 
             #binding-cells = <2>;
@@ -76,7 +76,7 @@
 
         base {
             bindings = <
-&mkp MB1  &ht_mkp_mkp MB4 MB2
+&mkp MB1  &ht_mo_mkp 2 MB2
 &adj1     &adj2
             >;
 
@@ -90,6 +90,13 @@
             >;
 
             display-name = "Scroll";
+        };
+
+        prev {
+            bindings = <
+&mkp MB4  &trans
+&trans    &trans
+            >;
         };
 
         sniper {
